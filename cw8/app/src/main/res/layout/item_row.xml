@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#EAF1FB"
+    app:cardElevation="24dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/itemNameView"
+        android:layout_width="176dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toEndOf="@+id/itemImg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/itemPriceView"
+        android:layout_width="75dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="100dp"
+        android:text="txt"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameView" />
+
+    <ImageView
+        android:id="@+id/itemImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/priceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="100dp"
+        android:text="Price :"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/itemPriceView"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toEndOf="@+id/itemImg"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
+
+</androidx.cardview.widget.CardView>
